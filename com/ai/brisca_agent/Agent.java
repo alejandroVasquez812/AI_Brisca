@@ -14,10 +14,6 @@ import java.util.Enumeration;
 public class Agent {
     private ArrayList<Card> myCards;
     private String triunfo;
-    private ArrayList<Card> bastosJugados;
-    private ArrayList<Card> copasJugadas;
-    private ArrayList<Card> oroJugados;
-    private ArrayList<Card> espadasJugadas;
     /*
     Create the agent with the first cards
      */
