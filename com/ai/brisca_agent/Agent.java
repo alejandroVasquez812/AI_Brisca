@@ -31,7 +31,6 @@ public class Agent {
      */
     public Card playTurn(Card[] tableCards) {
         //TODO
-        updateCards(tableCards);
         Card selectedCard=null;
         return selectedCard ;
 
@@ -43,24 +42,7 @@ public class Agent {
     public void minValue(){
         //TODO
     }
-    /*
-    Adds the cards to the corresponding list by type
-     */
-    public void updateCards(Card[] cards){
-        for (Card i:cards){
-            switch (i.getSuit()){
-                case "basto": bastosJugados.add(i);
-                break;
-                case "copa": copasJugadas.add(i);
-                break;
-                case "oro": oroJugados.add(i);
-                break;
-                case "espadas": espadasJugadas.add(i);
-                break;
-            }
 
-        }
-    }
     private void createTree(){
 
 
