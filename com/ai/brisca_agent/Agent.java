@@ -47,7 +47,7 @@ public class Agent {
     Adds the cards to the corresponding list by type
      */
     public void updateCards(Card[] cards){
-        for (Card i:tableCards){
+        for (Card i:cards){
             switch (i.getSuit()){
                 case "basto": bastosJugados.add(i);
                 break;
