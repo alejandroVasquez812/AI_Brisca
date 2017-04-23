@@ -12,21 +12,16 @@ import java.util.Enumeration;
  *
  */
 public class Agent {
-    private ArrayList<Card> myCards;
-    private String triunfo;
-    /*
-    Create the agent with the first cards
-     */
-    public Agent(Card[] myHand,String triunfo){
-        for(int i=0;i<=2;i++)
-            myCards.add(myHand[i]);
-        this.triunfo=triunfo;
-    }
+
     /*
     Receive the cards in the table and select the best play
      */
-    public Card playTurn(Card[] tableCards) {
+    public Card playTurn(Card[] myCards,Card[] tableCards, String triunfo) {
         //TODO
+
+
+
+        //...
         Card selectedCard=null;
         return selectedCard ;
 
