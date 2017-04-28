@@ -12,26 +12,15 @@ import java.util.Enumeration;
  *
  */
 public class Agent {
-    private ArrayList<Card> myCards;
-    private String triunfo;
-    private ArrayList<Card> bastosJugados;
-    private ArrayList<Card> copasJugadas;
-    private ArrayList<Card> oroJugados;
-    private ArrayList<Card> espadasJugadas;
-    /*
-    Create the agent with the first cards
-     */
-    public Agent(Card[] myHand,String triunfo){
-        for(int i=0;i<=2;i++)
-            myCards.add(myHand[i]);
-        this.triunfo=triunfo;
-    }
+
     /*
     Receive the cards in the table and select the best play
      */
-    public Card playTurn(Card[] tableCards) {
+    public Card playTurn(Card[] myCards,Card[] tableCards, String triunfo) {
         //TODO
-        updateCards(tableCards);
+
+
+        //...
         Card selectedCard=null;
         return selectedCard ;
 
@@ -43,24 +32,11 @@ public class Agent {
     public void minValue(){
         //TODO
     }
-    /*
-    Adds the cards to the corresponding list by type
-     */
-    public void updateCards(Card[] cards){
-        for (Card i:cards){
-            switch (i.getSuit()){
-                case "basto": bastosJugados.add(i);
-                break;
-                case "copa": copasJugadas.add(i);
-                break;
-                case "oro": oroJugados.add(i);
-                break;
-                case "espadas": espadasJugadas.add(i);
-                break;
-            }
+    public int evalFunction(ArrayList<Card> turnCards){
 
-        }
+
     }
+
     private void createTree(){
 
 
